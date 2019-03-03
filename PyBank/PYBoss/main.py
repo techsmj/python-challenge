@@ -1,5 +1,5 @@
 # Import Dependencies 
-import os, csv
+import  csv
 import pandas as pd
 	
 	
@@ -20,7 +20,7 @@ employee_id = []
 
 	
 
-	# Dictionary containing states names as keys and abbreviations as values (provided) 
+	# Dictionary containing states names as keys and abbreviations as values  
 us_state_abbrev = {
     'Alabama': 'AL',
     'Alaska': 'AK',
@@ -80,14 +80,13 @@ with open("employee_data.csv", "r",newline="", encoding='utf-8') as employee_dat
     csv_reader = csv.reader(employee_data,delimiter=",") 
 	
 
-	    # Skip the header 
+	    
     header = next(csv_reader)     
 	    
-	    # Iterate through each row stored in csvreader
     for row in csv_reader:
 	
 
-	        # Append employee id's into list, no formatting changes needed
+	        # Append employee id's into list
 	    employee_id.append(row[0])
 	
 
